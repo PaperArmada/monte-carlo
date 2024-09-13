@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monte Carlo Integration Result</title>
+</head>
+<body>
+    <h1>Monte Carlo Integration Result</h1>
+    <p>Estimated Integral: {{ integral_estimate }}</p>
+    <img src="data:image/png;base64,{{ graphic }}" alt="Monte Carlo Integration Plot" />
+    <br>
+    <a href="{% url 'montecarlo_view' %}">Run Another Simulation</a>
+</body>
+</html>
